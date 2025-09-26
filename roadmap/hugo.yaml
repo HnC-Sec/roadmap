@@ -1,0 +1,33 @@
+baseURL: https://faq.hackncode.dev/
+languageCode: en-us
+title: Hard Way Hacking and Coding
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/icon.png
+      link: /
+      width: 60
+      height: 60
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: Discord
+      url: "https://discord.gg/MwVE6KffFK"
+      params:
+        icon: discord
+      pageRef: /docs
+      weight: 1
+    - name: Search
+      weight: 3
+      params:
+        type: search
+    - name: GitHub
+      weight: 2
+      url: "https://github.com/hnc-sec/"
+      params:
+        icon: github
