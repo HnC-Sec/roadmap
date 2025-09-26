@@ -28,6 +28,7 @@ menu:
         type: search
     - name: GitHub
       weight: 2
-      url: "https://github.com/hnc-sec/"
+      url: "https://github.com/hnc-sec/roadmap"
       params:
         icon: github
+copyright: "© 2024-2025 Hard Way Hacking and Coding"
