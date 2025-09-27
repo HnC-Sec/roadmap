@@ -16,19 +16,25 @@ module:
 
 menu:
   main:
+    - name: Roadmap
+      url: /roadmap
+      weight: 1
+    - name: FAQ
+      url: /faq
+      weight: 2
     - name: Discord
       url: "https://discord.gg/MwVE6KffFK"
       params:
         icon: discord
       pageRef: /docs
-      weight: 1
-    - name: Search
-      weight: 3
-      params:
-        type: search
+      weight: 97
     - name: GitHub
-      weight: 2
+      weight: 98
       url: "https://github.com/hnc-sec/roadmap"
       params:
         icon: github
+    - name: Search
+      weight: 99
+      params:
+        type: search
 copyright: "© 2024-2025 Hard Way Hacking and Coding"
