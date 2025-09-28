@@ -60,7 +60,7 @@ Below is the basic outline of the learning plan. As I am able to flesh out secti
 - None
 
 ## Basic Computer Knowledge
-### Basic Computer Hardware and Software
+### [Basic Computer Hardware and Software](hardware)
 
 **General Topics**
 
@@ -85,7 +85,7 @@ Below is the basic outline of the learning plan. As I am able to flesh out secti
 
 - CompTIA A+
 
-### Basic Computer Networking
+### [Basic Computer Networking](networking)
 **General Topics**
 
 - The OSI model
@@ -146,7 +146,7 @@ Below is the basic outline of the learning plan. As I am able to flesh out secti
 - Linux Foundation LFCS
 - Redhat RHCSA
 
-### Basic Windows Administration
+### [Basic Windows Knowledge](windows)
 **General Topics**
 
 - Basics of Windows operating system
@@ -173,7 +173,7 @@ Below is the basic outline of the learning plan. As I am able to flesh out secti
 
 - None
 
-### Basic Troubleshooting
+### [Basic Troubleshooting](troubleshooting)
 **General Topics**
 
 - How to read error messages

@@ -14,6 +14,16 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
 menu:
   main:
     - name: Roadmap
@@ -38,3 +48,4 @@ menu:
       params:
         type: search
 copyright: "© 2024-2025 Hard Way Hacking and Coding"
+enableInlineShortcodes: true
