@@ -271,5 +271,5 @@ Remember: Security is an ongoing process, not a one-time fix. Regularly update y
 | Differential Diagnosis                 | Free  | Varies     | [Wikipedia](https://en.wikipedia.org/wiki/Differential_diagnosis)    | The basics of differential diagnosis          |
 | Troubleshooting Methodologies          | Free  | Varies     | [CompTIA](https://www.comptia.org/blog/troubleshooting-methodology)  | Great overview of the fundamentals of troubleshooting |
 | Crucial Steps to IT Troubleshooting    | Free  | 40 Minutes | [Youtube](https://www.youtube.com/watch?v=mIdxo_ymzno)               | Good video covering the steps of troubleshooting |
-| How to read a stack trace              | Free  | Variable   | [Amazon](https://www.amazon.com/gp/product/0131480057)               | Very good Linux system administrator handbook |
-| Complete CompTIA Linux+ Training       | $15   | 21 Hours   | [Udemy](https://www.udemy.com/course/kevin-netplus/)                 | Full CompTIA Linux+ Course                    |
+| Linux System Administrator's Handbook | $45   | Variable   | [Amazon](https://www.amazon.com/gp/product/0131480057)               | Very good Linux system administrator handbook |
+| Complete CompTIA Linux+ Training       | $15   | 21 Hours   | [Udemy](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) | Full CompTIA Linux+ Course                    |

@@ -96,9 +96,9 @@ An IP address is a logical address assigned to a device on a network. It is a 32
 
 IP addresses are used at the network layer of the OSI model to identify devices on the internet. When a device wants to send data to another device on the internet, it uses the IP address of the destination device to address the data packet.
 
-In many cases, your computer will be assigned what is known as a "private IP address" in one of the 3 designated blocks of private addresses (`192.168.0.0-192.168.255.255`, `10.0.0.0-10.255.255.255`, `172.16.0.0-172.31.255.255`). These act as an internal-only addressing space that is only unique within a private network such as your home network, or a company's internal network. These addresses are used to move traffic around that smaller network, and are replaced commonly by a public IP address at your router or modem. This service is known commonly as Network Address Translation (NAT).
+In many cases, your computer will be assigned what is known as a "private IP address" in one of the 3 designated blocks of private addresses (`192.168.0.0-192.168.255.255`, `10.0.0.0-10.255.255.255`, `172.16.0.0-172.31.255.255`). These act as an internal-only addressing space that is only unique within a private network such as your home network, or a company's internal network. These addresses are used to move traffic around that smaller network, and are translated to a public IP address at your router or modem when communicating with the internet. This service is known commonly as Network Address Translation (NAT).
 
-Note: If you want to be pedantic about it, the proper term for what most people think of as NAT is actually Port Address Translation (PAT), but it will almost always be called NAT regardless.
+Note: The specific type of NAT most commonly used in home and small office networks is actually Network Address and Port Translation (NAPT), also called PAT (Port Address Translation) or NAT overload. This allows many devices with private IP addresses to share a single public IP address by using different port numbers to distinguish between connections.
 
 ## Basics of routing and traffic handling
 
@@ -124,7 +124,7 @@ FTP (File Transfer Protocol): FTP is an application layer protocol that is used 
 
 SMTP (Simple Mail Transfer Protocol): SMTP is an application layer protocol that is used to send and receive email.
 
-SSH (Secure SHell): SSH is commonly used to connect securely to text-based terminals on remote hosts. Most often it is seen as a method of connecting to a Linux system\'s shell.
+SSH (Secure SHell): SSH is commonly used to connect securely to text-based terminals on remote hosts. Most often it is seen as a method of connecting to a Linux system's shell.
 
 ## Basic network security
 

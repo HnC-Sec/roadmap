@@ -68,7 +68,7 @@ Efficiently managing software packages is essential for maintaining system secur
 
 ## Basic PowerShell Scripting
 
-Scripting dramatically improves efficiency in system administration, as well as unlocking many advanced capabilities in Windows that are not available through the GUI. Start by learning PowerShell basics, including command syntax, pipeline usage, and script writing. Take note of the specific way PowerShell names modules in the - format (e.g. Get-Object, Copy-Item, Clear-Variable, etc.). Try developing some simple scripts to automate repetitive tasks, such as user account management, system configuration, and retrieving configurations.
+Scripting dramatically improves efficiency in system administration, as well as unlocking many advanced capabilities in Windows that are not available through the GUI. Start by learning PowerShell basics, including command syntax, pipeline usage, and script writing. Take note of the specific way PowerShell names cmdlets in the Verb-Noun format (e.g. Get-Process, Copy-Item, Clear-Variable, etc.). Try developing some simple scripts to automate repetitive tasks, such as user account management, system configuration, and system monitoring.
 
 
 Understanding PowerShell's execution policies and learning best practices for secure scripting are also critical components for safely automating administrative tasks. Not only does this teach you how to properly write secure scripts, but it will introduce you to many of the common mistakes that you might be able to exploit later.
