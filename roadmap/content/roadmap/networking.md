@@ -96,9 +96,9 @@ An IP address is a logical address assigned to a device on a network. It is a 32
 
 IP addresses are used at the network layer of the OSI model to identify devices on the internet. When a device wants to send data to another device on the internet, it uses the IP address of the destination device to address the data packet.
 
-In many cases, your computer will be assigned what is known as a "private IP address" in one of the 3 designated blocks of private addresses (`192.168.0.0-192.168.255.255`, `10.0.0.0-10.255.255.255`, `172.16.0.0-172.31.255.255`). These act as an internal-only addressing space that is only unique within a private network such as your home network, or a company's internal network. These addresses are used to move traffic around that smaller network, and are replaced commonly by a public IP address at your router or modem. This service is known commonly as Network Address Translation (NAT).
+In many cases, your computer will be assigned what is known as a "private IP address" in one of the 3 designated blocks of private addresses (`192.168.0.0-192.168.255.255`, `10.0.0.0-10.255.255.255`, `172.16.0.0-172.31.255.255`). These act as an internal-only addressing space that is only unique within a private network such as your home network, or a company's internal network. These addresses are used to move traffic around that smaller network, and are translated to a public IP address at your router or modem when communicating with the internet. This service is known commonly as Network Address Translation (NAT).
 
-Note: If you want to be pedantic about it, the proper term for what most people think of as NAT is actually Port Address Translation (PAT), but it will almost always be called NAT regardless.
+Note: The specific type of NAT most commonly used in home and small office networks is actually Network Address and Port Translation (NAPT), also called PAT (Port Address Translation) or NAT overload. This allows many devices with private IP addresses to share a single public IP address by using different port numbers to distinguish between connections.
 
 ## Basics of routing and traffic handling
 
@@ -124,7 +124,7 @@ FTP (File Transfer Protocol): FTP is an application layer protocol that is used 
 
 SMTP (Simple Mail Transfer Protocol): SMTP is an application layer protocol that is used to send and receive email.
 
-SSH (Secure SHell): SSH is commonly used to connect securely to text-based terminals on remote hosts. Most often it is seen as a method of connecting to a Linux system\'s shell.
+SSH (Secure SHell): SSH is commonly used to connect securely to text-based terminals on remote hosts. Most often it is seen as a method of connecting to a Linux system's shell.
 
 ## Basic network security
 
@@ -135,6 +135,22 @@ Firewalls: Firewalls are devices that filter traffic between networks and block 
 Intrusion detection systems (IDS): IDS monitor network traffic for suspicious activity and alert administrators when they detect something suspicious.
 
 Intrusion prevention systems (IPS): IPS are similar to IDS, but they can also take actions to block suspicious traffic.
+
+## Common Network Attacks and Basic Mitigations
+
+Understanding common network attacks is essential for implementing effective security measures and recognizing when you might be under attack:
+
+**Man-in-the-Middle (MITM) Attacks**: An attacker intercepts communication between two parties. Mitigations include using encrypted protocols (HTTPS, SSH), certificate pinning, and avoiding untrusted networks.
+
+**Denial of Service (DoS) and Distributed Denial of Service (DDoS)**: Attackers overwhelm a target with traffic to make it unavailable. Basic mitigations include rate limiting, traffic filtering, and using content delivery networks (CDNs).
+
+**Network Sniffing**: Attackers capture and analyze network traffic to steal sensitive information. Protect against this by using encryption (TLS/SSL), avoiding unencrypted protocols, and using VPNs on untrusted networks.
+
+**ARP Spoofing**: Attackers send fake ARP messages to link their MAC address with another device's IP address. Mitigations include static ARP entries for critical systems and ARP inspection on managed switches.
+
+**DNS Spoofing/Poisoning**: Attackers provide false DNS information to redirect traffic to malicious sites. Use secure DNS services, DNSSEC where available, and be cautious about DNS configuration changes.
+
+**Port Scanning**: Attackers scan for open ports to identify potential attack vectors. Mitigate by closing unnecessary ports, using port knocking, and monitoring for scan attempts.
 
 ## Basic network troubleshooting steps
 
