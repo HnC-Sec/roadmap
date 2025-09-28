@@ -1,7 +1,7 @@
 ---
 date: '2025-09-28T05:13:33Z'
 draft: false
-title: 'Networking'
+title: 'Basic Networking'
 ---
 
 ---

@@ -12,7 +12,10 @@ Very often I have been confronted by beginners, just realizing the vast playgrou
 
 One statement that anyone who has seen me respond to this type of question has seen is “[Hacking/Security] is almost always going to be 90% learning, and 10% doing. If you pursue this path, you will often find yourself spending hours researching, reading documentation, reviewing code, or slogging through academic papers, looking for the small nuggets that can carry you forward to the next step. If you have an aversion to learning, maybe this isn’t the right path for you.” I will absolutely reiterate that here, as it has been my experience in spending the last 30 years being an independent learner in the space, and it has helped me to build a vast foundation of knowledge that can help to understand complex problems and situations, with enough depth to quickly dive in and learn more.
 
-> [Hacking/Security] is almost always going to be 90% learning, and 10% doing. If you pursue this path, you will often find yourself spending hours researching, reading documentation, reviewing code, or slogging through academic papers, looking for the small nuggets that can carry you forward to the next step. If you have an aversion to learning, maybe this isn’t the right path for you.
+{{< callout type="warning">}}
+
+[Hacking/Security] is almost always going to be 90% learning, and 10% doing. If you pursue this path, you will often find yourself spending hours researching, reading documentation, reviewing code, or slogging through academic papers, looking for the small nuggets that can carry you forward to the next step. If you have an aversion to learning, maybe this isn’t the right path for you.
+{{< /callout >}}
 
 In creating this document, I will aim to keep things in a mostly linear order, with topics building on what has come before. If you can look at the knowledge check items in a section and say “I know what all of that is, and the basics of how it works”, feel free to skip that section. If you find that later you are noticing items you don’t have an understanding of, you might want to go back and brush up a bit before continuing. 
 
@@ -30,7 +33,7 @@ Each section will have the same basic layout:
 Below is the basic outline of the learning plan. As I am able to flesh out sections, they will include links to other articles with further details and recommendations.
 
 ## Foundational Knowledge
-### Basic Research and Learning
+### [Basic Research and Learning](learning)
 
 **General Topics**
 
@@ -114,7 +117,7 @@ Below is the basic outline of the learning plan. As I am able to flesh out secti
 - Cisco CCNA
 - CompTIA Network+
 
-### Basic Linux Administration
+### [Basic Linux Administration](linux)
 **General Topics**
 
 - Basics of Linux operating system

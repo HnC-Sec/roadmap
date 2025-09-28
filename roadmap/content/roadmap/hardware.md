@@ -1,7 +1,7 @@
 ---
 date: '2025-09-28T05:37:49Z'
 draft: false
-title: 'Hardware'
+title: 'Basic Computer Hardware and Software'
 ---
 
 ---

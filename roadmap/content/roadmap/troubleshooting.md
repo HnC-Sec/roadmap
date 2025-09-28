@@ -1,7 +1,7 @@
 ---
 date: '2025-09-28T05:00:06Z'
 draft: false
-title: 'Troubleshooting'
+title: 'Basic Troubleshooting'
 ---
 
 ---
