@@ -89,6 +89,25 @@ Developing a foundational understanding of Windows security concepts is essentia
 
 Explore things like the available Group Policy settings and how they interact. If you are feeling bold, dig in and learn about the concept of Windows Access Tokens and impersonation.
 
+## Windows Registry Basics
+
+The Windows Registry is a hierarchical database that stores low-level settings for the operating system and applications. Understanding the Registry is crucial for advanced Windows administration and security analysis.
+
+**Registry Structure**: The Registry is organized into five main root keys (hives):
+- **HKEY_CURRENT_USER (HKCU)**: Settings for the currently logged-in user
+- **HKEY_LOCAL_MACHINE (HKLM)**: System-wide settings and configuration
+- **HKEY_CLASSES_ROOT (HKCR)**: File association and COM object registration
+- **HKEY_USERS (HKU)**: Settings for all user profiles on the system
+- **HKEY_CURRENT_CONFIG (HKCC)**: Current hardware profile information
+
+**Registry Data Types**: Common data types include REG_SZ (string), REG_DWORD (32-bit number), REG_BINARY (binary data), and REG_MULTI_SZ (multiple strings).
+
+**Accessing the Registry**: Use `regedit.exe` for graphical access or `reg.exe` for command-line operations. PowerShell also provides registry cmdlets for programmatic access.
+
+**Security Implications**: The Registry contains sensitive information including passwords, security settings, and system configurations. Malware often modifies registry entries for persistence, and understanding common attack patterns helps in threat hunting and incident response.
+
+**Best Practices**: Always backup the registry before making changes, understand the impact of modifications, and use Group Policy when possible instead of direct registry edits for enterprise management.
+
 
 
 ## Resources

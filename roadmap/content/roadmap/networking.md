@@ -136,6 +136,22 @@ Intrusion detection systems (IDS): IDS monitor network traffic for suspicious ac
 
 Intrusion prevention systems (IPS): IPS are similar to IDS, but they can also take actions to block suspicious traffic.
 
+## Common Network Attacks and Basic Mitigations
+
+Understanding common network attacks is essential for implementing effective security measures and recognizing when you might be under attack:
+
+**Man-in-the-Middle (MITM) Attacks**: An attacker intercepts communication between two parties. Mitigations include using encrypted protocols (HTTPS, SSH), certificate pinning, and avoiding untrusted networks.
+
+**Denial of Service (DoS) and Distributed Denial of Service (DDoS)**: Attackers overwhelm a target with traffic to make it unavailable. Basic mitigations include rate limiting, traffic filtering, and using content delivery networks (CDNs).
+
+**Network Sniffing**: Attackers capture and analyze network traffic to steal sensitive information. Protect against this by using encryption (TLS/SSL), avoiding unencrypted protocols, and using VPNs on untrusted networks.
+
+**ARP Spoofing**: Attackers send fake ARP messages to link their MAC address with another device's IP address. Mitigations include static ARP entries for critical systems and ARP inspection on managed switches.
+
+**DNS Spoofing/Poisoning**: Attackers provide false DNS information to redirect traffic to malicious sites. Use secure DNS services, DNSSEC where available, and be cautious about DNS configuration changes.
+
+**Port Scanning**: Attackers scan for open ports to identify potential attack vectors. Mitigate by closing unnecessary ports, using port knocking, and monitoring for scan attempts.
+
 ## Basic network troubleshooting steps
 
 When troubleshooting network problems, it is important to follow a systematic approach. In an ideal world, you would test at each layer of the OSI model, and confirm if that particular layer is functioning and passing data as expected. Some basic troubleshooting steps include:
