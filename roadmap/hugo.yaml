@@ -29,9 +29,12 @@ menu:
     - name: Roadmap
       url: /roadmap
       weight: 1
+    - name: Dev Roadmap
+      url: /dev-roadmap
+      weight: 2
     - name: FAQ
       url: /faq
-      weight: 2
+      weight: 3
     - name: Discord
       url: "https://discord.gg/MwVE6KffFK"
       params:

@@ -10,6 +10,7 @@ Hard Way Hacking and Coding (HWHC) is a community of tech and security enthusias
 
 {{<cards>}}
     {{<card link="/roadmap" title="From Power Button to Pwn - Cybersecurity Roadmap" subtitle="Take your first steps on the journey into the world of security" icon="book-open">}}
+    {{<card link="/dev-roadmap" title="Developer Roadmap" subtitle="Find helpful resources for learning about various languages, and other developer skills" icon="terminal">}}
     {{<card link="/faq" title="Frequently Asked Questions" subtitle="Answers to some of the most frequently asked questions in our Discord server" icon="question-mark-circle">}}
     {{<card link="https://discord.gg/MwVE6KffFK" title="Join Our Discord" subtitle="Come join the Hard Way Hacking and Coding community in our Discord server" icon="discord">}}
     {{<card link="https://github.com/HnC-Sec/roadmap" title="Contribute to This Site" subtitle="This site and all of the information on it are made available under the MIT license. Come help us build it!" icon="github">}}
