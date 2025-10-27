@@ -21,10 +21,10 @@ Another set of skills that sets a good developer apart from the rest of the crow
     {{<card link="rust" title="Rust" subtitle="**Difficulty**: Medium<br>**Common Uses:** General Purpose, High Performance Libraries" icon="rust">}}
     {{<card link="c" title="C" subtitle="**Difficulty**: Medium<br>**Common Uses:** General Purpose, Embedded Devices" icon="c">}}
     {{<card link="cpp" title="C++" subtitle="**Difficulty**: Medium<br>**Common Uses:** General Purpose" icon="cpp">}}
-    {{<card link="csharp" title="C#" subtitle="**Difficulty**: Easy<br>**Common Uses:** General Purpose, Windows Integration, Windows GUI Applications" icon="csharp">}}
-    {{<card link="java" title="Java" subtitle="**Difficulty**: Easy<br>**Common Uses:** General Purpose" icon="java">}}
-    {{<card link="javascript" title="JavaScript" subtitle="**Difficulty**: Easy<br>**Common Uses:** General Purpose, Web Development" icon="javascript">}}
-    {{<card link="php" title="PHP" subtitle="**Difficulty**: Easy<br>**Common Uses:** Web Development" icon="php">}}
+    {{<card link="csharp" title="C#" subtitle="**Difficulty**: Low<br>**Common Uses:** General Purpose, Windows Integration, Windows GUI Applications" icon="csharp">}}
+    {{<card link="java" title="Java" subtitle="**Difficulty**: Low<br>**Common Uses:** General Purpose" icon="java">}}
+    {{<card link="javascript" title="JavaScript" subtitle="**Difficulty**: Low<br>**Common Uses:** General Purpose, Web Development" icon="javascript">}}
+    {{<card link="php" title="PHP" subtitle="**Difficulty**: Low<br>**Common Uses:** Web Development" icon="php">}}
 {{</cards>}}
 
 ## Developer Skills
