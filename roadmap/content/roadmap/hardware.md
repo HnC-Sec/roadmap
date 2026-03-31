@@ -56,6 +56,28 @@ Understanding how software works can help you to identify and avoid malicious so
 
 Overall, understanding computer hardware and software is essential for effective computer security. By taking the time to learn about how your computer works, you can better protect yourself from attack.
 
+## Hardware Security Concepts
+
+Modern computer hardware includes several security features designed to protect against various types of attacks. Understanding these concepts is increasingly important as hardware-based security becomes more prevalent.
+
+**Trusted Platform Module (TPM)**: A dedicated cryptographic processor that provides hardware-based security functions. TPM chips can generate, store, and manage cryptographic keys, measure system integrity, and provide secure boot capabilities.
+
+**Secure Boot**: A UEFI firmware feature that ensures only trusted software can run during the boot process. It uses digital signatures to verify the integrity of boot loaders, operating systems, and drivers before execution.
+
+**Hardware Security Modules (HSMs)**: Dedicated computing devices that manage digital keys and perform cryptographic operations. They provide a secure environment for key generation, storage, and management.
+
+**CPU Security Features**: Modern processors include security features like:
+- **Intel TXT/AMD SVM**: Hardware-based measured boot and runtime attestation
+- **Intel CET/ARM Pointer Authentication**: Control flow integrity protection
+- **Memory encryption**: Protecting data in memory from physical attacks
+
+**Physical Security**: Hardware security also involves protecting against physical attacks such as:
+- **Cold boot attacks**: Recovering encryption keys from RAM after power loss
+- **Side-channel attacks**: Extracting information through power consumption, electromagnetic emissions, or timing analysis
+- **Hardware tampering**: Detecting and responding to physical modification attempts
+
+Understanding these hardware security concepts helps in making informed decisions about system security architecture and recognizing potential vulnerabilities in computer systems.
+
 ## Resources
 
 | Title                              | Cost   | Time                | Link                                                                                                                                         | Notes                                                                                                    |

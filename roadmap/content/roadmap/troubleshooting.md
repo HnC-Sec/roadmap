@@ -59,6 +59,24 @@ Avoiding “shotgun troubleshooting” is especially important in cybersecurity.
 
 The best troubleshooters are not the ones who have seen every problem before, but the ones who apply disciplined thinking to any new issue. You’re not just fixing errors—you’re training your brain to think like an attacker, a sysadmin, and an investigator all at once.
 
+## Common Troubleshooting Anti-patterns to Avoid
+
+Understanding what *not* to do is just as important as knowing proper troubleshooting techniques. These anti-patterns are common mistakes that can make problems worse or waste significant time:
+
+**Shotgun Troubleshooting**: Making multiple changes simultaneously without testing each one individually. This makes it impossible to know which change actually fixed the problem and can introduce new issues.
+
+**Confirmation Bias**: Only looking for evidence that supports your initial hypothesis while ignoring contradictory information. Always be willing to revise your theory when presented with new evidence.
+
+**Premature Optimization**: Trying to fix performance or efficiency issues before fully understanding the root cause. Ensure the system is working correctly before making it work faster.
+
+**Documentation Avoidance**: Skipping the documentation because you think you know the system well enough. Even experts regularly reference documentation for specific details.
+
+**Lone Wolf Syndrome**: Refusing to ask for help or collaborate with colleagues who might have relevant experience. Fresh perspectives often reveal solutions you might miss.
+
+**Band-aid Solutions**: Implementing quick fixes without addressing the underlying problem. These temporary solutions often create more complex issues later.
+
+**Tool Obsession**: Believing that the right tool will solve every problem, rather than focusing on understanding the issue first. Tools are helpers, not magic solutions.
+
 ## Diagnostic Data Sources
 
 Effective troubleshooting depends on more than intuition—it requires gathering and interpreting the right kinds of data. Understanding the different types of diagnostic information available to you is essential for diagnosing problems, confirming fixes, and learning from failures. Whether you're debugging a desktop app, investigating a server issue, or analyzing a security incident, the following data sources form the backbone of any investigation.

@@ -264,6 +264,28 @@ While SELinux can be initially daunting, its granular control and proactive appr
 
 Remember: Security is an ongoing process, not a one-time fix. Regularly update your system, install security patches promptly, and implement these essential practices to build a robust defense against potential threats. Your Linux system will thank you for it!
 
+## Container Fundamentals
+
+Containers have revolutionized how applications are deployed and managed in modern Linux environments. Understanding containers is increasingly important for system administrators and security professionals.
+
+**What are Containers?**: Containers are lightweight, portable units that package an application and its dependencies together. Unlike virtual machines, containers share the host operating system's kernel while maintaining isolation between applications.
+
+**Container vs. Virtual Machines**: Containers are more resource-efficient than VMs because they don't require a full operating system for each instance. They start faster, use less memory, and allow for higher density on the same hardware.
+
+**Docker Basics**: Docker is the most popular containerization platform. Key concepts include:
+- **Images**: Read-only templates used to create containers
+- **Containers**: Running instances of images  
+- **Dockerfile**: Text files that define how to build images
+- **Registry**: Storage and distribution system for container images
+
+**Container Security Considerations**: Containers introduce new security considerations:
+- Container images can contain vulnerabilities
+- Privileged containers can compromise host security
+- Container networking requires careful configuration
+- Secrets and sensitive data need proper handling
+
+**Getting Started**: Begin by installing Docker or Podman on your Linux system and experimenting with basic commands like `docker run`, `docker build`, and `docker ps`. Practice creating simple Dockerfiles and understanding container networking.
+
 ## Resources
 
 | Title                                 | Cost  | Time       | Link                                                                 | Notes                                         |
@@ -271,5 +293,5 @@ Remember: Security is an ongoing process, not a one-time fix. Regularly update y
 | Differential Diagnosis                 | Free  | Varies     | [Wikipedia](https://en.wikipedia.org/wiki/Differential_diagnosis)    | The basics of differential diagnosis          |
 | Troubleshooting Methodologies          | Free  | Varies     | [CompTIA](https://www.comptia.org/blog/troubleshooting-methodology)  | Great overview of the fundamentals of troubleshooting |
 | Crucial Steps to IT Troubleshooting    | Free  | 40 Minutes | [Youtube](https://www.youtube.com/watch?v=mIdxo_ymzno)               | Good video covering the steps of troubleshooting |
-| How to read a stack trace              | Free  | Variable   | [Amazon](https://www.amazon.com/gp/product/0131480057)               | Very good Linux system administrator handbook |
-| Complete CompTIA Linux+ Training       | $15   | 21 Hours   | [Udemy](https://www.udemy.com/course/kevin-netplus/)                 | Full CompTIA Linux+ Course                    |
+| Linux System Administrator's Handbook | $45   | Variable   | [Amazon](https://www.amazon.com/gp/product/0131480057)               | Very good Linux system administrator handbook |
+| Complete CompTIA Linux+ Training       | $15   | 21 Hours   | [Udemy](https://www.udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/) | Full CompTIA Linux+ Course                    |

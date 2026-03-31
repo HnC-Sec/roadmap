@@ -68,7 +68,7 @@ Efficiently managing software packages is essential for maintaining system secur
 
 ## Basic PowerShell Scripting
 
-Scripting dramatically improves efficiency in system administration, as well as unlocking many advanced capabilities in Windows that are not available through the GUI. Start by learning PowerShell basics, including command syntax, pipeline usage, and script writing. Take note of the specific way PowerShell names modules in the - format (e.g. Get-Object, Copy-Item, Clear-Variable, etc.). Try developing some simple scripts to automate repetitive tasks, such as user account management, system configuration, and retrieving configurations.
+Scripting dramatically improves efficiency in system administration, as well as unlocking many advanced capabilities in Windows that are not available through the GUI. Start by learning PowerShell basics, including command syntax, pipeline usage, and script writing. Take note of the specific way PowerShell names cmdlets in the Verb-Noun format (e.g. Get-Process, Copy-Item, Clear-Variable, etc.). Try developing some simple scripts to automate repetitive tasks, such as user account management, system configuration, and system monitoring.
 
 
 Understanding PowerShell's execution policies and learning best practices for secure scripting are also critical components for safely automating administrative tasks. Not only does this teach you how to properly write secure scripts, but it will introduce you to many of the common mistakes that you might be able to exploit later.
@@ -88,6 +88,25 @@ Developing a foundational understanding of Windows security concepts is essentia
 
 
 Explore things like the available Group Policy settings and how they interact. If you are feeling bold, dig in and learn about the concept of Windows Access Tokens and impersonation.
+
+## Windows Registry Basics
+
+The Windows Registry is a hierarchical database that stores low-level settings for the operating system and applications. Understanding the Registry is crucial for advanced Windows administration and security analysis.
+
+**Registry Structure**: The Registry is organized into five main root keys (hives):
+- **HKEY_CURRENT_USER (HKCU)**: Settings for the currently logged-in user
+- **HKEY_LOCAL_MACHINE (HKLM)**: System-wide settings and configuration
+- **HKEY_CLASSES_ROOT (HKCR)**: File association and COM object registration
+- **HKEY_USERS (HKU)**: Settings for all user profiles on the system
+- **HKEY_CURRENT_CONFIG (HKCC)**: Current hardware profile information
+
+**Registry Data Types**: Common data types include REG_SZ (string), REG_DWORD (32-bit number), REG_BINARY (binary data), and REG_MULTI_SZ (multiple strings).
+
+**Accessing the Registry**: Use `regedit.exe` for graphical access or `reg.exe` for command-line operations. PowerShell also provides registry cmdlets for programmatic access.
+
+**Security Implications**: The Registry contains sensitive information including passwords, security settings, and system configurations. Malware often modifies registry entries for persistence, and understanding common attack patterns helps in threat hunting and incident response.
+
+**Best Practices**: Always backup the registry before making changes, understand the impact of modifications, and use Group Policy when possible instead of direct registry edits for enterprise management.
 
 
 
