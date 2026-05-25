@@ -36,7 +36,6 @@ menu:
       url: "https://discord.gg/MwVE6KffFK"
       params:
         icon: discord
-      pageRef: /docs
       weight: 97
     - name: GitHub
       weight: 98
