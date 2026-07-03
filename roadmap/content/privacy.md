@@ -1,5 +1,5 @@
 ---
-date: '2026-07-02T00:00:00Z'
+date: '2026-07-03T00:00:00Z'
 draft: false
 title: 'Skid Detector — Privacy Policy'
 toc: false
@@ -7,11 +7,11 @@ toc: false
 
 ---
 
-**Effective date:** 2 July 2026
+**Effective date:** 3 July 2026
 
 **Applies to:** the "Skid Detector" Discord application operated by the Hard Way Hacking and Coding (HWHC) moderation team, within the HWHC Discord community.
 
-Skid Detector is a **self-hosted moderation assistant**. It helps human moderators find low-effort, malicious, or rule-breaking ("skid") messages by running message text through a locally-hosted text classifier and flagging likely matches for a moderator to review and act on. This policy explains exactly what data it touches, what it keeps, why, and how you can opt out.
+Skid Detector is a **self-hosted moderation assistant**. It helps human moderators find low-effort, malicious, or rule-breaking ("skid") messages by running message text through a locally-hosted AI model and flagging likely matches for a moderator to review and act on. This policy explains exactly what data it touches, what it keeps, why, and how you can opt out.
 
 ## 1. Scope
 
@@ -33,7 +33,7 @@ Skid Detector is **self-hosted on the HWHC team's own server**. There is no thir
 
 **Processed in memory only and NOT stored:**
 
-- Ambient message content that is scanned and scored. If a message is not flagged and not acted on, its content is classified in memory and discarded — it is **not written to disk or logged**.
+- Ambient message content that is scanned and scored. To classify a message, its text is passed to the locally-hosted AI model **in memory**; if the message is not flagged and not acted on, it is discarded — **not written to disk or logged, and not sent to any external service**.
 - Membership and role data used for exemption checks.
 
 **Stored off-platform (on the operator's server):**
@@ -44,13 +44,13 @@ Skid Detector is **self-hosted on the HWHC team's own server**. There is no thir
 
 Stored labeled messages are retained for as long as they are useful for maintaining the classifier. You may request deletion of data associated with your account at any time (see §7).
 
-## 4. Use of message content for machine learning
+## 4. Use of message content for AI classification
 
-**Yes — stored, moderator-labeled message content is used to train a machine-learning model.** Specifically, labeled examples are used to periodically **retrain a locally-hosted text classifier** (a DistilBERT model) that powers detection.
+Detection is powered by a **locally-hosted AI model** — a large language model that runs entirely on the HWHC team's own server through a local runtime (ollama). To classify a message, its text is sent **only to this on-server model**, processed in memory, and — unless the message is flagged and acted on, or explicitly labeled by a moderator — discarded.
 
-- The model is used **solely for moderation triage inside the HWHC community.**
-- The model and the underlying data are **never sold, shared, published, or used for any purpose outside this community's moderation.**
-- Training runs on the operator's own infrastructure; message content is **not sent to any external AI provider.**
+- Message content is **never sent to any external or third-party AI provider** (such as OpenAI, Anthropic, or Google). The model runs on-premises; nothing leaves the operator's server in order to classify a message.
+- **Stored, moderator-labeled message content may be used to improve detection** — for example, to refine the model's instructions and worked examples, or to train and evaluate classifier models. All such work happens on the operator's own infrastructure.
+- The model, the prompts, and the underlying data are used **solely for moderation triage inside the HWHC community**, and are **never sold, shared, published, or used for any purpose outside this community's moderation.**
 
 ## 5. How data is shared
 
