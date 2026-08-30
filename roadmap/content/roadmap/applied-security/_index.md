@@ -1,6 +1,8 @@
 ---
 title: "Applied Security"
-weight: 50
+weight: 300
+sidebar:
+  open: true
 ---
 
 ## Applied Security

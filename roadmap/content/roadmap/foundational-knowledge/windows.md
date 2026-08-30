@@ -2,36 +2,56 @@
 date: '2025-09-27T21:54:37Z'
 draft: false
 title: 'Basic Windows Knowledge'
----
-
----
-
-**General Topics**
-
-- Basics of Windows operating system
-- Installing Windows
-- Windows user management
-- Windows package management
-- Basic PowerShell scripting
-- Basic Windows security concepts
-
-**Milestones**
-
-- Install and configure a Windows desktop
-- Write a PowerShell script to automate a simple process
-
-**Knowledge Check Items**
-
-- Command Prompt
-- winget, EXE, MSI
-- AD
-- PowerShell ISE
-- Windows Firewall, UAC, Runas
-
-**Relevant Certifications**
-
-- None
-
+weight: 500
+topics:
+  - Basics of Windows operating system
+  - Installing Windows
+  - Windows user management
+  - Windows package management
+  - Basic PowerShell scripting
+  - Basic Windows security concepts
+milestones:
+  - Install and configure a Windows desktop
+  - Write a PowerShell script to automate a simple process
+knowledge_check:
+  - Command Prompt
+  - winget, EXE, MSI
+  - AD
+  - PowerShell ISE
+  - Windows Firewall, UAC, Runas
+certifications:
+  - None
+learning_resources:
+  - title: "Windows 11 Desktop Administration"
+    cost: "Free"
+    time: "~3 Hours"
+    url: "https://www.youtube.com/watch?v=cDDHSJeBfy8"
+    link_text: "YouTube"
+    notes: "Basic Windows desktop administration"
+  - title: "Windows Server Administration"
+    cost: "Free"
+    time: "~3 Hours"
+    url: "https://www.youtube.com/watch?v=lrtYDS5WKR0&list=PLYogJ_kxL1wTesq-vNxEc8tjDOHvszeWf"
+    link_text: "YouTube Playlist"
+    notes: "Playlist of about 40 videos covering the basics of Windows Server"
+  - title: "Wikiversity: Windows Server"
+    cost: "Free"
+    time: "Varies"
+    url: "https://en.wikiversity.org/wiki/Windows_Server_Administration"
+    link_text: "Wikiversity"
+    notes: "Various learning modules covering all sorts of Windows Administration topics"
+  - title: "Windows Server Administration Fundamentals"
+    cost: "Free"
+    time: "~6 Hours"
+    url: "https://learn.microsoft.com/en-us/shows/Windows-Server-Administration-Fundamentals/"
+    link_text: "Microsoft Learn"
+    notes: "Great Administration lessons straight from Microsoft"
+  - title: "Complete Windows Server Administration"
+    cost: "$129"
+    time: "15 Hours"
+    url: "https://www.udemy.com/course/complete-windows-server-2016-administration-course/"
+    link_text: "Udemy"
+    notes: "Guided training for Windows Systems Administration"
 ---
 
 One important milestone in your journey to understanding cybersecurity is gaining a deeper understanding of the Windows operating system. Windows administration is foundational to understanding and securing a wide array of computer systems and networks. 
@@ -91,13 +111,3 @@ Explore things like the available Group Policy settings and how they interact. I
 
 
 
-## Resources
-
-
-| Title	| Cost | Time | Link | Notes |
-|:------|:-----|:-----|:-----|:------|
-| Windows 11 Desktop Administration | Free | ~3 Hours | [YouTube](https://www.youtube.com/watch?v=cDDHSJeBfy8) | Basic Windows desktop administration |
-| Windows Server Administration | Free | ~3 Hours | [YouTube Playlist](https://www.youtube.com/watch?v=lrtYDS5WKR0&list=PLYogJ_kxL1wTesq-vNxEc8tjDOHvszeWf) | Playlist of about 40 videos covering the basics of Windows Server |
-| Wikiversity: Windows Server | Free | Varies | [Wikiversity](https://en.wikiversity.org/wiki/Windows_Server_Administration) | Various learning modules covering all sorts of Windows Administration topics |
-| Windows Server Administration Fundamentals | Free | ~6 Hours | [Microsoft Learn](https://learn.microsoft.com/en-us/shows/Windows-Server-Administration-Fundamentals/) | Great Administration lessons straight from Microsoft |
-| Complete Windows Server Administration | $129 | 15 Hours | [Udemy](https://www.udemy.com/course/complete-windows-server-2016-administration-course/) | Guided training for Windows Systems Administration |

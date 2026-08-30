@@ -2,38 +2,58 @@
 date: '2025-09-28T05:13:33Z'
 draft: false
 title: 'Basic Networking'
----
-
----
-
-**General Topics**
-
-- The OSI model
-- Basics of addressing
-- Basics of routing and traffic handling
-- Common protocols and services
-- Basic network security
-- Basic network troubleshooting steps
-
-**Milestones**
-
-- Set up a basic network
-- Identify and implement basic network security
-
-**Knowledge Check Items**
-
-- A.P.S.T.N.D.P. / P.D.N.T.S.P.A.
-- MAC Address, IP Address, Subnet Mask, CIDR, IPv4, IPv6
-- Switching, Routing, Ethernet, 802.11, NAT, PAT
-- TCP, UDP, HTTP, SSH, DNS, DHCP
-- Firewall, IDS, IPS, VLAN
-- Ping, Traceroute, Wireshark, Latency, Packet Loss
-
-**Relevant Certifications**
-
-- Cisco CCNA
-- CompTIA Network+
-
+weight: 300
+topics:
+  - The OSI model
+  - Basics of addressing
+  - Basics of routing and traffic handling
+  - Common protocols and services
+  - Basic network security
+  - Basic network troubleshooting steps
+milestones:
+  - Set up a basic network
+  - Identify and implement basic network security
+knowledge_check:
+  - A.P.S.T.N.D.P. / P.D.N.T.S.P.A.
+  - MAC Address, IP Address, Subnet Mask, CIDR, IPv4, IPv6
+  - Switching, Routing, Ethernet, 802.11, NAT, PAT
+  - TCP, UDP, HTTP, SSH, DNS, DHCP
+  - Firewall, IDS, IPS, VLAN
+  - Ping, Traceroute, Wireshark, Latency, Packet Loss
+certifications:
+  - Cisco CCNA
+  - CompTIA Network+
+learning_resources:
+  - title: "Paul Browning - CompTIA A+(Partial)"
+    cost: "Free"
+    time: "~5 Hours"
+    url: "https://www.youtube.com/watch?v=1CZXXNKAY5o&t=71503s"
+    link_text: "Youtube"
+    notes: "Module 20 covers Networking"
+  - title: "Paul Browning - CompTIA Network+"
+    cost: "Free"
+    time: "23+ Hours"
+    url: "https://www.youtube.com/watch?v=xmpYfyNmWbw"
+    link_text: "Youtube"
+    notes: "Complete basic Network+ course on Youtube"
+  - title: "Basics of Computer Networking"
+    cost: "Free"
+    time: "~3 Hours"
+    url: "https://www.geeksforgeeks.org/basics-computer-networking/#"
+    link_text: "GeeksForGeeks"
+    notes: "Basics of computer networking. Deep knowledge on some areas"
+  - title: "Cisco CCNA Training - Keith Barker"
+    cost: "Free"
+    time: "20+ Hours"
+    url: "https://www.youtube.com/watch?v=8AX9LandYJU&list=PLQQoSBmrXmrysEaVNia7KVwf85qATIi1V"
+    link_text: "Youtube"
+    notes: "Many videos covering the entire CCNA test material"
+  - title: "Complete CompTIA Network+ Training"
+    cost: "$20"
+    time: "19 Hours"
+    url: "https://www.udemy.com/course/kevin-netplus/"
+    link_text: "Udemy"
+    notes: "Full CompTIA Network+ Course"
 ---
 
 To be effective in computer security, it is critical to have a good understanding of basic computer networking. Networking is the foundation of almost all forms of hacking, whether it is over a hard-wired local area network (LAN), a wireless network (WiFi) or the global internet. For most computer systems, the network is the only way to interact with them, and in the world of hacking, it will usually be your primary approach vector to any system. Many of the most common vulnerabilities you will come across are at least in part related to networking, and require a basic understanding of networking to successfully exploit. To launch a successful attack, you need to understand how to craft network packets, interact with network devices, and bypass security measures, all of which relies on having a solid understanding of networking basics.
@@ -167,12 +187,3 @@ Restart the devices. Sometimes restarting the devices can fix the problem.
 Test the network. Once you have made changes, test the network to make sure that the problem has been fixed.
 {{% /steps %}}
 
-Here are some resources that can help you to learn more about basic computer networking:
-
-| Title                                   | Cost  | Time      | Link                                                                                                                                                                                                 | Notes                                      |
-|------------------------------------------|-------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| Paul Browning - CompTIA A+(Partial)      | Free  | ~5 Hours  | [Youtube](https://www.youtube.com/watch?v=1CZXXNKAY5o&t=71503s)                                                                                                                                    | Module 20 covers Networking                |
-| Paul Browning - CompTIA Network+         | Free  | 23+ Hours | [Youtube](https://www.youtube.com/watch?v=xmpYfyNmWbw)                                                                                                                                             | Complete basic Network+ course on Youtube  |
-| Basics of Computer Networking            | Free  | ~3 Hours  | [GeeksForGeeks](https://www.geeksforgeeks.org/basics-computer-networking/#)                                                                                                                        | Basics of computer networking. Deep knowledge on some areas |
-| Cisco CCNA Training - Keith Barker       | Free  | 20+ Hours | [Youtube](https://www.youtube.com/watch?v=8AX9LandYJU&list=PLQQoSBmrXmrysEaVNia7KVwf85qATIi1V)                                                              | Many videos covering the entire CCNA test material |
-| Complete CompTIA Network+ Training       | $20   | 19 Hours  | [Udemy](https://www.udemy.com/course/kevin-netplus/)                                                                                                                                                | Full CompTIA Network+ Course               |

@@ -2,37 +2,45 @@
 date: '2025-09-28T13:37:48Z'
 draft: false
 title: 'Basic Research and Learning'
----
-
----
-
-**General Topics**
-
-- How to find resources
-- How to evaluate a source
-- How to ask questions
-- Identifying bias and scams
-- Using AI for learning
-- Types of sources
-
-**Milestones**
-
-- Find reliable source material on a topic
-- Ask questions intelligently to avoid XY problems
-- Identify likely bias and false information
-
-**Knowledge Check Items**
-
-- Google, Google Scholar
-- Clickbait, Content Farm
-- The XY Problem
-- Types of Bias
-- AI Hallucination
-
-**Relevant Certifications**
-
-- None
-
+weight: 100
+topics:
+  - How to find resources
+  - How to evaluate a source
+  - How to ask questions
+  - Identifying bias and scams
+  - Using AI for learning
+  - Types of sources
+milestones:
+  - Find reliable source material on a topic
+  - Ask questions intelligently to avoid XY problems
+  - Identify likely bias and false information
+knowledge_check:
+  - Google, Google Scholar
+  - Clickbait, Content Farm
+  - The XY Problem
+  - Types of Bias
+  - AI Hallucination
+certifications:
+  - None
+learning_resources:
+  - title: "Google Scholar"
+    cost: "Free"
+    time: "Varies"
+    url: "https://scholar.google.com"
+    link_text: "Google Scholar"
+    notes: "Search engine limited to scholarly, peer-reviewed sources"
+  - title: "Calling Bullshit"
+    cost: "Free"
+    time: "Varies"
+    url: "https://www.callingbullshit.org"
+    link_text: "University of Washington"
+    notes: "Free online course on spotting misleading data, statistics, and claims"
+  - title: "Introduction to Logic and Critical Thinking Specialization"
+    cost: "$49-79/month"
+    time: "~20 Hours"
+    url: "https://www.coursera.org/specializations/logical-and-critical-thinking"
+    link_text: "Coursera"
+    notes: "Duke University course track on evaluating arguments and evidence; paid certificate, audit free"
 ---
 
 This section could probably be titled "Learning to Learn", but whatever you call it, it is a critical first step on our journey. In today's world, we are constantly bombarded with information from a variety of sources. It can be difficult to know what information is reliable and what information is not. Learning how to research and learn independently is essential for making informed decisions in all areas of our lives. When it comes to the world of computer security, this is especially important, as many of the things you may end up researching will be topics where the differentiation between "ethical" and "unethical" come down to how the information is applied. It is usually safe to assume that if someone is willing to write information about how to perform potentially unethical tasks, they are probably willing to do unethical things like embedding malicious commands in something that users might copy/paste and execute on their own system.

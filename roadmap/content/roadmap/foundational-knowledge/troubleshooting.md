@@ -2,35 +2,49 @@
 date: '2025-09-28T05:00:06Z'
 draft: false
 title: 'Basic Troubleshooting'
----
-
----
-
-**General Topics**
-
-- How to read error messages
-- Different troubleshooting strategies
-- Common types of diagnostic data
-- Common sources of troubleshooting information
-
-**Milestones**
-
-- Identify, diagnose, and fix simple issues
-- Locate a program’s log files
-- Read a stack trace and identify the source
-- Intelligently locate known fixes
-
-**Knowledge Check Items**
-
-- Stack Trace, Process ID
-- AppData, /var/log
-- Event viewer, journalctl, dmesg
-- Knowledge Base, Documentation, Community
-
-**Relevant Certifications**
-
-- None
-
+weight: 600
+topics:
+  - How to read error messages
+  - Different troubleshooting strategies
+  - Common types of diagnostic data
+  - Common sources of troubleshooting information
+milestones:
+  - Identify, diagnose, and fix simple issues
+  - Locate a program's log files
+  - Read a stack trace and identify the source
+  - Intelligently locate known fixes
+knowledge_check:
+  - Stack Trace, Process ID
+  - AppData, /var/log
+  - Event viewer, journalctl, dmesg
+  - Knowledge Base, Documentation, Community
+certifications:
+  - None
+learning_resources:
+  - title: "Differential Diagnosis"
+    cost: "Free"
+    time: "Varies"
+    url: "https://en.wikipedia.org/wiki/Differential_diagnosis"
+    link_text: "Wikipedia"
+    notes: "The basics of differential diagnosis"
+  - title: "Troubleshooting Methodologies"
+    cost: "Free"
+    time: "Varies"
+    url: "https://www.comptia.org/blog/troubleshooting-methodology"
+    link_text: "CompTIA"
+    notes: "Great overview of the fundamentals of troubleshooting"
+  - title: "Crucial Steps to IT Troubleshooting"
+    cost: "Free"
+    time: "40 Minutes"
+    url: "https://www.youtube.com/watch?v=mIdxo_ymzno"
+    link_text: "YouTube"
+    notes: "Good video covering the steps of troubleshooting"
+  - title: "How to read a stack trace"
+    cost: "Free"
+    time: "Variable"
+    url: "https://www.sentinelone.com/blog/how-to-read-a-stack-trace/"
+    link_text: "SentinelOne"
+    notes: "Basics of reading a stack trace"
 ---
 
 ## Error Messages
@@ -89,11 +103,3 @@ Open source projects typically use platforms like GitHub Issues, GitLab, or Jira
 
 Sometimes you need a human to talk to. Many projects and professional communities maintain real-time chat spaces on Discord, Slack, Matrix, or IRC. These are great places to get help if you’ve done your homework and can clearly explain your problem. Be polite, show what you’ve already tried, and respect people’s time—and you’ll often get incredibly helpful advice.
 
-## Resources
-
-| Title                              | Cost  | Time      | Link        | Notes                                      |
-|-------------------------------------|-------|-----------|-------------|--------------------------------------------|
-| Differential Diagnosis              | Free  | Varies    | [Wikipedia](https://en.wikipedia.org/wiki/Differential_diagnosis) | The basics of differential diagnosis        |
-| Troubleshooting Methodologies       | Free  | Varies    | [CompTIA](https://www.comptia.org/blog/troubleshooting-methodology) | Great overview of the fundamentals of troubleshooting |
-| Crucial Steps to IT Troubleshooting | Free  | 40 Minutes| [YouTube](https://www.youtube.com/watch?v=mIdxo_ymzno) | Good video covering the steps of troubleshooting |
-| How to read a stack trace           | Free  | Variable  | [SentinelOne](https://www.sentinelone.com/blog/how-to-read-a-stack-trace/) | Basics of reading a stack trace            |

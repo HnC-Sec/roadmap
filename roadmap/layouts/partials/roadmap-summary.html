@@ -1,0 +1,62 @@
+{{- /*
+Renders the quick-reference summary (Topics/Milestones/Knowledge Check/
+Certifications) for a roadmap page from its front matter. Used both on
+the roadmap outline (linked, no body) and at the top of each roadmap
+page itself (unlinked, followed by the full body).
+
+@param {page} .page The roadmap page to summarize.
+@param {bool} .linked Whether to render the title as a link to the page.
+*/ -}}
+{{- $page := .page -}}
+{{- $linked := .linked | default false -}}
+{{- $hasLeft := or $page.Params.topics $page.Params.milestones -}}
+{{- $hasRight := or $page.Params.knowledge_check $page.Params.certifications -}}
+<div class="roadmap-summary">
+  {{- if $linked }}
+  <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+  {{- end }}
+  {{- if or $hasLeft $hasRight }}
+  <div class="hx:grid hx:grid-cols-1 hx:md:grid-cols-2 hx:gap-x-8">
+    {{- if $hasLeft }}
+    <div>
+      {{- with $page.Params.topics }}
+      <p><strong>General Topics</strong></p>
+      <ul>
+        {{- range . }}
+        <li>{{ . | markdownify }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+      {{- with $page.Params.milestones }}
+      <p><strong>Milestones</strong></p>
+      <ul>
+        {{- range . }}
+        <li>{{ . | markdownify }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- if $hasRight }}
+    <div>
+      {{- with $page.Params.knowledge_check }}
+      <p><strong>Knowledge Check Items</strong></p>
+      <ul>
+        {{- range . }}
+        <li>{{ . | markdownify }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+      {{- with $page.Params.certifications }}
+      <p><strong>Relevant Certifications</strong></p>
+      <ul>
+        {{- range . }}
+        <li>{{ . | markdownify }}</li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

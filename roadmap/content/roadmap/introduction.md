@@ -1,13 +1,7 @@
 ---
-aliases:
-- /from-power-button-to-pwn-a-roadmap-to-computer-security
-date: '2025-09-25T16:47:05Z'
-draft: false
-title: 'From Power Button to PWN - A Roadmap to Computer Security'
-toc: false
+title: 'Introduction'
+weight: 10
 ---
-
-## Introduction
 
 Very often I have been confronted by beginners, just realizing the vast playground that is modern technology, with statements like “I’m interested in computers and security”, or “I want to get into bug bounties”, or even “I want to learn to hack”, usually followed by “How do I get there?”. This article, along with others linked from the various sections, aims to be a basic roadmap that can be referenced by learners on the path to learning about the vast world of computer security. The roadmap provides some various signposts, guidance, and milestones along the way, but by design is not a comprehensive guide. 
 

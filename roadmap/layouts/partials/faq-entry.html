@@ -1,0 +1,19 @@
+{{- /*
+Renders a single FAQ page as a collapsible entry, styled to match the
+theme's built-in "details" shortcode.
+
+@param {page} . The FAQ page to render.
+*/ -}}
+<details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group">
+  <summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90">
+    <div class="hx:flex hx:flex-col">
+      <strong class="hx:text-lg">{{ .Title | markdownify }}</strong>
+      {{- with .Params.also_asked }}
+      <span class="hx:text-sm hx:italic hx:font-normal hx:text-neutral-500 hx:dark:text-neutral-400">Or: {{ delimit . ", " }}</span>
+      {{- end }}
+    </div>
+  </summary>
+  <div class="hx:p-2 hx:overflow-hidden">
+    {{ .Content }}
+  </div>
+</details>

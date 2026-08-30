@@ -1,0 +1,39 @@
+{{- /*
+Renders the "Resources" table for a roadmap topic page, from its
+`learning_resources` front matter (a list of {title, cost, time, url,
+notes} entries) — matches the Title/Cost/Time/Link/Notes table format
+already established by hand in several articles before this became a
+front-matter-driven field. Rendered only at the bottom of the topic's
+own page (layouts/roadmap/single.html) — deliberately not part of
+roadmap-summary.html, so it never shows up in the outline or the
+top-of-page quick-reference card.
+
+@param {page} .page The roadmap page to render resources for.
+*/ -}}
+{{- $page := .page -}}
+{{- $resources := $page.Params.learning_resources -}}
+{{- if $resources }}
+<h2>Resources</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Cost</th>
+      <th>Time</th>
+      <th>Link</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $resources }}
+    <tr>
+      <td>{{ .title }}</td>
+      <td>{{ .cost }}</td>
+      <td>{{ .time }}</td>
+      <td><a href="{{ .url }}" target="_blank" rel="noopener">{{ .link_text | default "Link" }}</a></td>
+      <td>{{ .notes | markdownify }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+{{- end }}

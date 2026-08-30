@@ -1,6 +1,74 @@
 ---
 title: "Web Application Security"
 weight: 30
+topics:
+  - How the Web Works (Beginner)
+  - Recon and Enumeration
+  - "OWASP Top 10 — Core Vulnerability Classes"
+  - Key Attack Techniques (Intermediate)
+  - Tooling
+milestones:
+  - Intercept, modify, and replay HTTP requests using Burp Suite
+  - Exploit a SQL injection vulnerability manually (without sqlmap first)
+  - Exploit all three types of XSS (reflected, stored, DOM) in a lab environment
+  - Exploit an IDOR vulnerability to access another user's data
+  - Exploit an SSRF vulnerability to reach an internal service
+  - Complete PortSwigger Web Security Academy labs for at least 5 vulnerability classes
+  - Complete the OWASP WebGoat or DVWA setup and exploit all major vulnerability categories
+  - Perform a full web application recon workflow against a lab target from scratch
+knowledge_check:
+  - The **Same-Origin Policy** and why it exists — and what CORS does to relax it
+  - The difference between **reflected**, **stored**, and **DOM-based XSS** — and why DOM XSS is harder to detect
+  - What makes a SQL injection **blind** vs. **error-based** and how you extract data in each case
+  - What an **IDOR** is and why it is often an access control issue rather than a technical one
+  - The difference between **authentication** (who you are) and **authorisation** (what you are allowed to do)
+  - "How **JWT** (JSON Web Tokens) work and what common misconfigurations lead to exploitation (alg:none, weak secret, key confusion)"
+  - What **SSRF** is and why it is dangerous in cloud environments (IMDS metadata service exposure)
+  - "How **CSRF** works and what mitigations (SameSite cookies, CSRF tokens) defend against it"
+  - The role of Burp Suite's **Intruder** tool and what it is used for
+  - "What **Content Security Policy (CSP)** is and how it can mitigate (but not fully prevent) XSS"
+certifications:
+  - "**eWPT** (eLearnSecurity Web Application Penetration Tester) — practical, lab-based exam"
+  - "**BSCP** (Burp Suite Certified Practitioner, PortSwigger) — highly respected, difficult, web-specific"
+  - "**OSWA** (Offensive Security Web Assessor) — OffSec's web-focused certification"
+  - "**OSCP** — includes web components alongside network exploitation"
+learning_resources:
+  - title: "PortSwigger Web Security Academy"
+    cost: "Free"
+    time: "Varies"
+    url: "https://portswigger.net/web-security"
+    link_text: "PortSwigger"
+    notes: "The single best free resource for web security; hands-on labs for every major vulnerability class"
+  - title: "OWASP Top 10"
+    cost: "Free"
+    time: "Varies"
+    url: "https://owasp.org/www-project-top-ten/"
+    link_text: "OWASP"
+    notes: "Official reference documentation"
+  - title: "OWASP WebGoat"
+    cost: "Free"
+    time: "Varies"
+    url: "https://owasp.org/www-project-webgoat/"
+    link_text: "OWASP"
+    notes: "Intentionally vulnerable web application for practice"
+  - title: "DVWA (Damn Vulnerable Web Application)"
+    cost: "Free"
+    time: "Varies"
+    url: "https://dvwa.co.uk/"
+    link_text: "DVWA"
+    notes: "Classic beginner lab"
+  - title: "PentestMonkey SQL Injection Cheatsheet"
+    cost: "Free"
+    time: "Varies"
+    url: "https://pentestmonkey.net/category/cheat-sheet/sql-injection"
+    link_text: "Pentest Monkey"
+    notes: "SQL injection payload and technique reference"
+  - title: "HackTheBox Academy — Bug Bounty Hunter Path"
+    cost: "Paid"
+    time: "Varies"
+    url: "https://academy.hackthebox.com/path/preview/bug-bounty-hunter"
+    link_text: "HackTheBox"
+    notes: "Structured web security curriculum"
 ---
 
 ## Web Application Security
@@ -57,53 +125,3 @@ The OWASP Top 10 is the industry-standard reference for the most critical web ap
 - `sqlmap` for automated SQL injection testing
 - `ffuf` / `gobuster` for web fuzzing
 - Browser developer tools (Network tab, Console, Application storage)
-
----
-
-### Milestones
-
-- [ ] Intercept, modify, and replay HTTP requests using Burp Suite
-- [ ] Exploit a SQL injection vulnerability manually (without sqlmap first)
-- [ ] Exploit all three types of XSS (reflected, stored, DOM) in a lab environment
-- [ ] Exploit an IDOR vulnerability to access another user's data
-- [ ] Exploit an SSRF vulnerability to reach an internal service
-- [ ] Complete PortSwigger Web Security Academy labs for at least 5 vulnerability classes
-- [ ] Complete the OWASP WebGoat or DVWA setup and exploit all major vulnerability categories
-- [ ] Perform a full web application recon workflow against a lab target from scratch
-
----
-
-### Knowledge Check Items
-
-Can you explain the following?
-
-- The **Same-Origin Policy** and why it exists — and what CORS does to relax it
-- The difference between **reflected**, **stored**, and **DOM-based XSS** — and why DOM XSS is harder to detect
-- What makes a SQL injection **blind** vs. **error-based** and how you extract data in each case
-- What an **IDOR** is and why it is often an access control issue rather than a technical one
-- The difference between **authentication** (who you are) and **authorisation** (what you are allowed to do)
-- How **JWT** (JSON Web Tokens) work and what common misconfigurations lead to exploitation (alg:none, weak secret, key confusion)
-- What **SSRF** is and why it is dangerous in cloud environments (IMDS metadata service exposure)
-- How **CSRF** works and what mitigations (SameSite cookies, CSRF tokens) defend against it
-- The role of Burp Suite's **Intruder** tool and what it is used for
-- What **Content Security Policy (CSP)** is and how it can mitigate (but not fully prevent) XSS
-
----
-
-### Relevant Certifications
-
-- **eWPT** (eLearnSecurity Web Application Penetration Tester) — practical, lab-based exam
-- **BSCP** (Burp Suite Certified Practitioner, PortSwigger) — highly respected, difficult, web-specific
-- **OSWA** (Offensive Security Web Assessor) — OffSec's web-focused certification
-- **OSCP** — includes web components alongside network exploitation
-
----
-
-### Recommended Resources
-
-- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — the single best free resource for web security; hands-on labs for every major vulnerability class
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — official reference documentation
-- [OWASP WebGoat](https://owasp.org/www-project-webgoat/) — intentionally vulnerable web application for practice
-- [DVWA (Damn Vulnerable Web Application)](https://dvwa.co.uk/) — classic beginner lab
-- [HackTheBox Academy — Bug Bounty Hunter Path](https://academy.hackthebox.com/path/preview/bug-bounty-hunter) — structured web security curriculum
-- [PentestMonkey SQL Injection Cheatsheet](https://pentestmonkey.net/category/cheat-sheet/sql-injection)

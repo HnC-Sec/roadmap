@@ -2,41 +2,43 @@
 date: '2025-09-28T13:51:45Z'
 draft: false
 title: 'Basic Linux Administration'
----
-
----
-
-**General Topics**
-
-- Basics of Linux operating system
-- Installing Linux
-- Linux user management
-- Linux filesystem management
-- Linux package management
-- Basic Bash scripting
-- Where Linux came from
-- Basic Linux security concepts
-
-**Milestones**
-
-- Install and configure a simple Linux OS (Ubuntu, Fedora, Mint, etc)
-- Write a bash script to automate a simple process
-
-**Knowledge Check Items**
-
-- Distro, Kernel, Bootloader, Window Manager, Shell, GRUB
-- Shadow file, Hard Link, Symbolic Link
-- Man page
-- Package Manager (YUM, APT, DNF, dpkg, rpm)
-- UNIX, GNU
-- Sudo, su, iptables, selinux
-
-**Relevant Certifications**
-
-- CompTIA Linux+
-- Linux Foundation LFCS
-- Redhat RHCSA
-
+weight: 400
+topics:
+  - Basics of Linux operating system
+  - Installing Linux
+  - Linux user management
+  - Linux filesystem management
+  - Linux package management
+  - Basic Bash scripting
+  - Where Linux came from
+  - Basic Linux security concepts
+milestones:
+  - Install and configure a simple Linux OS (Ubuntu, Fedora, Mint, etc)
+  - Write a bash script to automate a simple process
+knowledge_check:
+  - Distro, Kernel, Bootloader, Window Manager, Shell, GRUB
+  - Shadow file, Hard Link, Symbolic Link
+  - Man page
+  - Package Manager (YUM, APT, DNF, dpkg, rpm)
+  - UNIX, GNU
+  - Sudo, su, iptables, selinux
+certifications:
+  - CompTIA Linux+
+  - Linux Foundation LFCS
+  - Redhat RHCSA
+learning_resources:
+  - title: "UNIX and Linux System Administration Handbook"
+    cost: "$53"
+    time: "Variable"
+    url: "https://www.amazon.com/gp/product/0131480057"
+    link_text: "Amazon"
+    notes: "Very good Linux system administrator handbook"
+  - title: "Complete CompTIA Linux+ Training"
+    cost: "$15"
+    time: "21 Hours"
+    url: "https://www.udemy.com/course/kevin-netplus/"
+    link_text: "Udemy"
+    notes: "Full CompTIA Linux+ Course"
 ---
 
 Linux is an operating system (OS) that can manage your computer's hardware and resources, allowing you to run programs and interact with your device. Unlike Windows or macOS, Linux is open-source, meaning its code is freely available for anyone to modify and distribute. This fosters a vibrant community of developers and enthusiasts who constantly improve and innovate.
@@ -264,12 +266,3 @@ While SELinux can be initially daunting, its granular control and proactive appr
 
 Remember: Security is an ongoing process, not a one-time fix. Regularly update your system, install security patches promptly, and implement these essential practices to build a robust defense against potential threats. Your Linux system will thank you for it!
 
-## Resources
-
-| Title                                 | Cost  | Time       | Link                                                                 | Notes                                         |
-|----------------------------------------|-------|------------|----------------------------------------------------------------------|-----------------------------------------------|
-| Differential Diagnosis                 | Free  | Varies     | [Wikipedia](https://en.wikipedia.org/wiki/Differential_diagnosis)    | The basics of differential diagnosis          |
-| Troubleshooting Methodologies          | Free  | Varies     | [CompTIA](https://www.comptia.org/blog/troubleshooting-methodology)  | Great overview of the fundamentals of troubleshooting |
-| Crucial Steps to IT Troubleshooting    | Free  | 40 Minutes | [Youtube](https://www.youtube.com/watch?v=mIdxo_ymzno)               | Good video covering the steps of troubleshooting |
-| How to read a stack trace              | Free  | Variable   | [Amazon](https://www.amazon.com/gp/product/0131480057)               | Very good Linux system administrator handbook |
-| Complete CompTIA Linux+ Training       | $15   | 21 Hours   | [Udemy](https://www.udemy.com/course/kevin-netplus/)                 | Full CompTIA Linux+ Course                    |
