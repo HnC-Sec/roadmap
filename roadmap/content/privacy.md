@@ -17,6 +17,7 @@ Skid Detector is a **self-hosted moderation assistant**. It helps human moderato
 - Skid Detector runs in **one Discord guild** (the HWHC community) that it is explicitly configured for. It ignores messages from every other server.
 - It **does not read direct messages (DMs)**.
 - It only processes messages in the specific channels its moderators have chosen to watch, and it **skips messages from trusted/exempt members** (see §6).
+- **Established members are automatically exempt.** Anyone whose highest role is at or above **@Active** (plus any role the moderators mark exempt) is **never scanned and never stored** — no action or command needed on your part.
 
 ## 2. What the bot accesses
 To do its job the bot receives, from Discord's API:
@@ -47,12 +48,18 @@ Skid Detector does **not** share your data with third parties. It is self-hosted
 
 ## 6. Opting out
 You can opt out of being scanned and stored at any time:
+- **Automatic:** members at or above **@Active** are already exempt — nothing to do (see §1).
 - Use the **`/skidoptout`** command to immediately opt out. It is always available as self-service and grants you the trusted/exempt role on the spot. Once you hold that role, Skid Detector **ignores your messages entirely and stores nothing new**.
+- Or use **`/gdpr`** and choose *"Opt out / object to processing"* — the same immediate effect, alongside the other data-subject options (see §7).
 - As an alternative, you can ask the HWHC moderation team to grant you the exempt role directly.
 - Once you are exempt, your messages are never scanned and never have their content stored.
 
-## 7. Accessing or deleting your data
-The primary channel for data-access and deletion requests is email to **skiddetector@skelli.win**; a Discord ModMail / ticket to the HWHC moderation team (see §9) remains an alternative. Because storage is limited to moderator-labeled messages and action records, most members have **no stored data at all.**
+## 7. Your data-subject rights (GDPR)
+You can exercise your rights under the GDPR — access (Art. 15), erasure (Art. 17), objection/opt-out (Art. 21), portability (Art. 20), and restriction/rectification (Art. 16 & 18):
+- **In Discord:** run the **`/gdpr`** command and pick the right you want. *Objection/opt-out* is applied instantly; the others return the details for a verified request.
+- **By email:** the primary channel for access, erasure, and portability requests is **skiddetector@skelli.win** (a Discord ModMail / ticket to the moderation team, see §9, is an alternative). Because records are keyed to the **message text and the labeling moderator — not your account ID**, please include the exact text of the message(s) concerned so we can locate them. Note that erasure may be limited where retaining moderation/safety records is a legitimate interest (Art. 17(3)).
+- We respond within **30 days** (Art. 12). Because storage is limited to moderator-labeled messages, most members have **no stored data at all.**
+- **Accountability:** we keep an encrypted internal log of who submitted a data-subject request and which right they exercised, solely to demonstrate GDPR compliance (Art. 5(2)).
 
 Note on how deletion is honored: stored records are keyed to the **message text** and the **Discord ID of the labeling moderator** — **not** to the original author's account ID. A deletion request is therefore honored by matching the specific message text you provide, so please include the exact text of the message(s) you want removed.
 
